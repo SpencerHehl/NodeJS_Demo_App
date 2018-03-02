@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  nodejs_demo_app:
+    image: nodejs_demo_app
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
